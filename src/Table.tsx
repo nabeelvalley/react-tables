@@ -126,11 +126,11 @@ export const SearchableTable: React.FC<TableProps<any>> = (props) => {
 
   return (
     <>
-      <input value={query} onChange={(e) => setQuery(e.target.value)} />
+      <input placeholder="search" value={query} onChange={(e) => setQuery(e.target.value)} />
       {markedRows.length > 0 ? (
         <Table {...props} rows={markedRows} />
       ) : (
-        <p>No results</p>
+        <p className="error">No results</p>
       )}
     </>
   )

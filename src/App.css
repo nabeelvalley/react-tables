@@ -1,0 +1,86 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background:#49a09d;
+  font-family: sans-serif;
+  font-weight: 100;
+  padding: 0 10px;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+th {
+  text-align: left;
+}
+thead th {
+  background-color: #9bf0c89a;
+}
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+tbody td {
+  position: relative;
+}
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+input {
+  display: block;
+  width: 50%;
+  max-width: 400px;
+  padding: 10px 10px;
+  margin: 40px auto;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+input::placeholder {
+  color: white;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 4px;
+}
+
+mark {
+  background-color: rgb(0, 255, 106);
+  color: white;
+}
+
+.error {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
